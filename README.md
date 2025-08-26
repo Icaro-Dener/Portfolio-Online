@@ -10,7 +10,7 @@ Meu estilo é transformar pixels em algo único — focado em detalhes, jogos, a
 ###  Galeria de Pixel Art
 <table>
   <tr>
-    <td><img src="caminho/para/pixel-art1.png" alt="Pixel art 1" width="200" /></td>
+    <td><img src="assets/img1.png" alt="Pixel art 1" width="200" /></td>
     <td><img src="caminho/para/pixel-art2.png" alt="Pixel art 2" width="200" /></td>
   </tr>
   <tr>
@@ -31,6 +31,17 @@ Meu estilo é transformar pixels em algo único — focado em detalhes, jogos, a
 
 ---
 
+### ⚙️ Integrações & Funcionalidades
+
+Esse portfólio não é só bonito, também tem umas **funcionalidades bacanas**:
+
+- 📌 **Menu âncora** — navegação suave entre as seções do site.  
+- 🌍 **Botão de idioma** — alterna entre português e inglês de forma rápida.  
+- 🔍 **Zoom em imagens** — destaque para cada pixel art com efeito de zoom.  
+- 🎨 **Galeria organizada** — exibição responsiva dos trabalhos em pixel art.  
+
+---
+
 ###  Acesse o Site
 [**Veja o portfólio ao vivo!**](https://icaro-dener.github.io/Portfolio-Online/)
 
@@ -38,7 +49,7 @@ Meu estilo é transformar pixels em algo único — focado em detalhes, jogos, a
 
 ### 🦇 Easter Egg: O Morcegão
 Shhh... 👀  
-Existe um **morcego misterioso** escondido nesse projeto.  
+Existe um **morcego misterioso** nesse projeto.  
 Se você clicar nele, ele muda de sprite...  
 E quem sabe você consiga até **controlar no WASD**.  
 Descubra se é verdade visitando o site! 🦇
