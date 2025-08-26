@@ -10,12 +10,12 @@ Meu estilo é transformar pixels em algo único — focado em detalhes, jogos, a
 ###  Galeria de Pixel Art
 <table>
   <tr>
-    <td><img src="assets/img1.png" alt="Pixel art 1" width="200" /></td>
-    <td><img src="caminho/para/pixel-art2.png" alt="Pixel art 2" width="200" /></td>
+    <td><img src="assets/img4.png" alt="Pixel art 1" width="200" /></td>
+    <td><img src="assets/img8.png" alt="Pixel art 2" width="200" /></td>
   </tr>
   <tr>
-    <td><img src="caminho/para/pixel-art3.png" alt="Pixel art 3" width="200" /></td>
-    <td><img src="caminho/para/pixel-art4.png" alt="Pixel art 4" width="200" /></td>
+    <td><img src="assets/img7.png" alt="Pixel art 3" width="200" /></td>
+    <td><img src="assets/img3.png" alt="Pixel art 4" width="200" /></td>
   </tr>
 </table>
 
