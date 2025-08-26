@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=VT323&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=VT323&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Portfólio Icaro Dener</title>
+    <link rel="icon" href="assets/diamond.gif" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="head">
+            <div class="foto"></div>
+            <p class="itemName">Icaro Dener</p>
+        </div>
+
+        <div class="head">
+            <a id="sobreMim2" class="item" href="#sobreMim">Sobre Mim</a>
+            <a id="arts" class="item" href="#artes">Artes</a>
+            <a id="contacts" class="item" href="#contato">Contato</a>
+            <button class="eua" onclick="mudarIdioma()"><img id="flag" src="assets/eua.png" alt="t"></button>
+        </div>
+    </header>
+
+    <section class="banner">
+        <p class="itemBg">Icaro Dener Portfólio</p>
+    </section>
+
+    <section class="sessao2">
+        <div id="morcego">
+            <img onclick="morcegoMuda()" id="morceguin" src="assets/morceguin.gif" alt="morcego voando">
+        </div>
+
+        <h1 class="abtme" id="sobreMim">Sobre Mim</h1>
+
+        <p class="sobre sobre1" id="texto">
+            Olá! Sou um artista de pixel art em início de carreira, mas já trago uma experiência
+            legal criando sprites, cenários e experimentando diferentes estilos visuais.
+        </p>
+
+        <p class="sobre sobre2" id="texto2">
+            Sempre fui apaixonado por esse universo retrô e estou em constante aprendizado para
+            aprimorar minhas técnicas. Estou muito animado para começar novos projetos,
+            colaborar com outros criadores e dar vida a ideias criativas com muito cuidado nos
+            detalhes. Gosto de transformar pixels em algo único e impactante, seja para jogos,
+            assets ou ilustrações.
+        </p>
+    </section>
+
+    <section id="artes" class="sessaoArtes">
+        <div class="container">
+            <div class="image"><img src="assets/img1.png" alt="pixel art1"></div>
+            <div class="image"><img src="assets/img2.gif" alt="pixel art2"></div>
+            <div class="image"><img src="assets/img3.gif" alt="pixel art3"></div>
+            <div class="image"><img src="assets/img4.png" alt="pixel art4"></div>
+            <div class="image"><img src="assets/img5.gif" alt="pixel art5"></div>
+            <div class="image"><img src="assets/img6.png" alt="pixel art5"></div>
+            <div class="image"><img src="assets/img7.png" alt="pixel art5"></div>
+            <div class="image"><img src="assets/img8.png" alt="pixel art5"></div>
+        </div>
+        <div class="popupImage">
+            <span>&times;</span>
+            <img src="assets/solar.png" alt="popup">
+        </div>
+
+        <script>
+            document.querySelectorAll('.container img').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popupImage').style.display = 'block';
+                    document.querySelector('.popupImage img').src = image.getAttribute('src');
+                }
+            });
+            document.querySelector('.popupImage span').onclick = () => {
+                document.querySelector('.popupImage').style.display = 'none';
+            }
+        </script>
+    </section>
+
+
+
+    <section id="contato" class="sessao4">
+        <div class="cont cont 1">
+           <p class="itemName">Icaro Dener</p>
+        </div>
+        <div class="cont cont 2">
+            <a target="_blank" href="https://www.instagram.com/icarodener/">
+                <img class="iconContato"src="assets/svg1.svg" alt="icon1">
+            </a>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=5551993723478">
+                <img class="iconContato"src="assets/svg2.svg" alt="icon2">
+            </a>
+            <a target="_blank" href="mailto:icarodennersitton@gmail.com">
+                <img class="iconContato" src="assets/svg3.svg"alt="icon3">
+            </a>
+            <a target="_blank" href="https://discordapp.com/users/459876411277180937">
+                <img class="iconDiscord iconContato"src="assets/svg4.svg" alt="icon4">
+            </a>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
