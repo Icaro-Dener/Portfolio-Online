@@ -15,7 +15,7 @@ Meu estilo é transformar pixels em algo único — focado em detalhes, jogos, a
   </tr>
   <tr>
     <td><img src="assets/img7.png" alt="Pixel art 3" width="200" /></td>
-    <td><img src="assets/img3.png" alt="Pixel art 4" width="200" /></td>
+    <td><img src="assets/img3.gif" alt="Pixel art 4" width="200" /></td>
   </tr>
 </table>
 
