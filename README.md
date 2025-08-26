@@ -7,6 +7,10 @@ Meu estilo é transformar pixels em algo único — focado em detalhes, jogos, a
 
 ---
 
+###  Acesse o Site
+[**Veja o portfólio ao vivo!**](https://icaro-dener.github.io/Portfolio-Online/)
+
+---
 ###  Galeria de Pixel Art
 <table>
   <tr>
@@ -42,10 +46,6 @@ Esse portfólio não é só bonito, também tem umas **funcionalidades bacanas**
 
 ---
 
-###  Acesse o Site
-[**Veja o portfólio ao vivo!**](https://icaro-dener.github.io/Portfolio-Online/)
-
----
 
 ### 🦇 Easter Egg: O Morcegão
 Shhh... 👀  
