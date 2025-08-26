@@ -103,7 +103,7 @@ html {
 .foto {
     width: 60px;
     height: 60px;
-    background-image: url("assets/Foto.png");
+    background-image: url("assets/foto.png");
     background-size: cover;
     border-radius: 30px;
 }
