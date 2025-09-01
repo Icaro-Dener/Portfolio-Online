@@ -1,70 +1,70 @@
 /* Reset e configurações gerais */
 * {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
-    overflow-x: hidden !important;
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 
 /* ===================== Header do Portfólio ===================== */
 .header {
-    width: 100%;
-    height: 160px;
-    background-color: #111418;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
+  width: 100%;
+  height: 160px;
+  background-color: #111418;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
 }
 
 .head {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 2em;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2em;
+  align-items: center;
 }
 
 .item {
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    position: relative;
-    user-select: none;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.8s ease forwards;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  user-select: none;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
 }
 
 
 .item::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 2px;
-    background-color: white;
-    transition: width 0.3s ease, left 0.3s ease;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease, left 0.3s ease;
 }
 
 .item:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .itemName {
-    font-size: 25px;
-    color: white;
-    animation: itemNames 1s ease-in;
-    position: relative;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.8s ease forwards;
-} 
+  font-size: 25px;
+  color: white;
+  animation: itemNames 1s ease-in;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
 
 .eua {
   width: 65px;
@@ -74,7 +74,7 @@ html {
   cursor: pointer;
   background: #181c22;
   backdrop-filter: blur(8px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   display: flex;
   align-items: center;
@@ -92,7 +92,7 @@ html {
 /* Hover */
 .eua:hover {
   transform: scale(1.12) rotate(180deg);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3), 0 0 15px rgba(16, 18, 29, 0.719);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(16, 18, 29, 0.719);
 }
 
 /* Clique */
@@ -101,208 +101,339 @@ html {
 }
 
 .foto {
-    width: 60px;
-    height: 60px;
-    background-image: url("assets/foto.png");
-    background-size: cover;
-    border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  background-image: url("assets/foto.png");
+  background-size: cover;
+  border-radius: 30px;
 }
 
 
 /* ===================== Animações ===================== */
 @keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
 /* ===================== Banner ===================== */
 .banner {
-    width: 100%;
-    height: 200px;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("assets/banner.png");
-    position: relative;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("assets/banner.png");
+  position: relative;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .itemBg {
-    font-size: 60px;
-    color: white;
-    user-select: none;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 3s ease forwards;
+  font-size: 60px;
+  color: white;
+  user-select: none;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 3s ease forwards;
 }
 
 
 /* ===================== Sessão 2 - Sobre Mim ===================== */
 #morcego {
-    position: absolute;
-    top: 150px;
-    left: 1700px;
-    border-radius: 8px;
-    cursor: pointer;
+  position: absolute;
+  top: 150px;
+  left: 1700px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 #morceguin {
-    width: 150px;
+  width: 150px;
 }
 
 .sessao2 {
-    width: 100%;
-    height: 900px;
-    background-color: #111418;
-    box-shadow: -30px -40px 200px #111418;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    justify-content: center;
-    padding: 250px;
-    background-image: radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-    background-size: 10px 10px;
+  width: 100%;
+  height: 900px;
+  background-color: #111418;
+  box-shadow: -30px -40px 200px #111418;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  padding: 250px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 10px 10px;
 }
 
 .abtme {
-    color: white;
-    font-size: 80px;
+  color: white;
+  font-size: 80px;
 }
 
 .sobre {
-    color: white;
-    font-size: 30px;
-    text-align: justify;
-    text-justify: inter-word;
-    line-height: 1.8;
+  color: white;
+  font-size: 30px;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.8;
 }
 
 
 /* ===================== Sessão 3 - Artes ===================== */
 .sessaoArtes {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #0e1114;
-    position: relative;
-    background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-    background-size: 15px 15px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0e1114;
+  position: relative;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 15px 15px;
 
 }
 
-.container{
-    display: flex;
-    padding: 100px 50px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    user-select: none;
+.container {
+  display: flex;
+  padding: 100px 50px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  user-select: none;
 }
 
 .container .image {
-    width: 450px;
-    height: 350px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  width: 450px;
+  height: 350px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.container .image img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: 2s linear;
+.container .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 2s linear;
 }
 
 
 .container .image img:after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.2);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    border-radius: 15px;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 15px;
 }
 
 .container .image img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
 }
 
-.popupImage{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgb(0,0,0,0.9);
-    height: 100%;
-    width: 100%;
-    z-index: 100;
-    display: none;
+.popupImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
 }
 
-.popupImage span{
-    position: absolute;
-    top: 0;
-    right: 10px;
-    font-size: 40px;
-    font-weight: bold;
-    color: whitesmoke;
-    cursor: pointer;
-    user-select: none;
-    z-index: 100;
+.popupImage span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  color: whitesmoke;
+  cursor: pointer;
+  user-select: none;
+  z-index: 100;
 }
 
-.popupImage img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 5px solid #111418;
-    border-radius: 5px;
-    width: 750px;
-    object-fit: cover;
+.popupImage img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #111418;
+  border-radius: 10px;
+  max-width: 95%;
+  max-height: 90vh;
+  object-fit: contain;
 }
 
-@media (max-width: 768px){
-    .container .popupImage img{
-        width: 95%;
-    }
+@media (max-width: 768px) {
+  .container .popupImage img {
+    width: 95%;
+  }
 }
 
 /* ===================== Sessão 4 - Contato ===================== */
 
 .sessao4 {
-    width: 100%;
-    height: 200px;
-    background-color: #111418;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2em;
-    padding: 60px;
+  width: 100%;
+  background-color: #111418;
+  display: flex;
+  flex-direction: column;
+  /* fica em coluna no celular */
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  padding: 30px 20px;
+  text-align: center;
 }
 
 .iconContato {
-    width: 40px;
-    filter: brightness(0) invert(1) opacity(0.7);
-    user-select: none;
+  width: 35px;
+  filter: brightness(0) invert(1) opacity(0.7);
+  user-select: none;
+  transition: transform 0.2s ease;
 }
 
-.iconDiscord{
-    width: 35px;
-    filter: brightness(0) invert(1) opacity(0.7);
+.iconDiscord {
+  width: 32px;
+}
+
+/* hover bonitinho */
+.iconContato:hover {
+  transform: scale(1.2);
+  filter: brightness(0) invert(1) opacity(1);
 }
 
 .cont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* menos espaçamento no mobile */
+  flex-wrap: wrap;
+  /* quebra linha se faltar espaço */
+}
+
+/* ===================== Responsividade ===================== */
+
+@media (max-width: 1024px) {
+  .abtme {
+    font-size: 50px;
+  }
+
+  .sobre {
+    font-size: 22px;
+  }
+
+  .sessao2 {
+    padding: 120px;
+  }
+
+  .sessao4 {
+    padding: 60px 80px;
+  }
+
+  .cont {
     gap: 40px;
+  }
+
+  .iconContato {
+    width: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Header em coluna no mobile */
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 1em;
+  }
+
+  .head {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .itemName {
+    font-size: 20px;
+  }
+
+  /* Banner */
+  .itemBg {
+    font-size: 35px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  /* Sessão Sobre Mim */
+  .sessao2 {
+    padding: 80px 30px;
+  }
+
+  .abtme {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .sobre {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  #morcego {
+    display: none;
+  }
+
+  .sessao4 {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+  .cont {
+    gap: 30px;
+  }
+
+  .iconContato {
+    width: 40px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .itemBg {
+    font-size: 28px;
+  }
+
+  .abtme {
+    font-size: 32px;
+  }
+
+  .sobre {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .sessao2 {
+    padding: 60px 20px;
+  }
+
+  .foto {
+    width: 50px;
+    height: 50px;
+  }
+
+  .eua {
+    width: 50px;
+    height: 50px;
+  }
 }
